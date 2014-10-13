@@ -23,4 +23,6 @@
   ```
   sudo pip install --upgrade requests
   ```
+3. Sign up for Bing Search API at https://datamarket.azure.com/dataset/bing/search 
+4. Copy API key (https://datamarket.azure.com/account/keys) to "bingapi.key". 
 

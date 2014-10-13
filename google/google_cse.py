@@ -31,9 +31,8 @@ def cse_search(query,engineId,apiKey,start=1,total=10,searchImage=False):
                 ).execute()
         start = start + num
         cnt = cnt + num
-        resList.append(res)
         for i in range(len(res[u'items'])):
-            print(res[u'items'][i][u'link'])
+            resList.append(res[u'items'][i][u'link'])
     return resList
     
 def main():
@@ -54,7 +53,12 @@ def main():
     apiKey = key_file.readline().rstrip()
     key_file.close()
     
-    res = cse_search(query=args.query,total=args.n,searchImage=args.image,engineId=engineId,apiKey=apiKey)
+    # api call
+    results = cse_search(query=args.query,total=args.n,searchImage=args.image,engineId=engineId,apiKey=apiKey)
+
+    # display results
+    for url in results:
+        print(url)
 
 if __name__ == '__main__':
   main()
