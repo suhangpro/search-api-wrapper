@@ -1,5 +1,15 @@
 #!/usr/bin/python2
 
+# Example usage:
+# ==============
+#
+#   ./ms_congnitive_image_download.py -q="tropical fish" -n 10
+#
+#   Defaults:
+#   -- Images stored in ./data/images
+#   -- Pickle of search query results stored in ./data/search_result_pickle.p
+
+
 import requests # Get from https://github.com/kennethreitz/requests
 import string
 import argparse
