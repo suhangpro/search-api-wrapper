@@ -36,7 +36,6 @@ class BingSearchAPI():
             num = min(50,total-cnt)
             request = request_prefix + u'&$top=' + unicode(num) + u'&$skip=' + unicode(skip)
             request = self.replace_symbols(request)
-            import pdb; pdb.set_trace()
             res = requests.get(self.bing_api+request, auth=(self.key, self.key)).json()
             skip = skip + num
             cnt = cnt + num
