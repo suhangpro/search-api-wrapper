@@ -15,6 +15,9 @@
 
 ## Bing Search API
 
+> Note that Microsoft Azure DataMarket WebSearch API has been deprecated since Dec. 15 2016. Please check [bing/ms_congnitive_image_download.py](https://github.com/suhangpro/search-api-wrapper/blob/master/bing/ms_congnitive_image_download.py) for an example using the newer [Microsoft Cognitive Services](https://www.microsoft.com/cognitive-services). 
+
+
 1. Make sure the dependencies are met:
   * latest version of Python2
   * pip
